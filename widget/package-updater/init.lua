@@ -44,7 +44,7 @@ widget_button:buttons(
       nil,
       function()
         if updateAvailable then
-          awful.spawn('alacritty -e sudo apt update && sudo apt upgrade')
+          awful.spawn('alacritty -e sudo pacman -Syu')
         else
           awful.spawn('alacritty -e htop')
         end
@@ -91,7 +91,7 @@ end
 
 local last_battery_check = os.time()
 watch(
-  'apt list --upgradable',
+  'pamac checkupdates',
   60,
   function(_, stdout)
     numOfUpdatesAvailable = tonumber(stdout:match('.-\n'):match('%d*'))
