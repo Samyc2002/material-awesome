@@ -6,21 +6,21 @@
 configuration {
 	display-drun:    "Activate";
 	display-run:     "Execute";
-	show-icons:      true;	
+	show-icons:      true;
 	sidebar-mode:    true;
 }
 
 * {
-	background-color:            rgb(18, 30, 37);
-	text-color:                  #d3d7cf;
-	selbg:                       rgb(0, 86, 136);
-	actbg:                       rgb(22, 37, 46);
-	urgbg:                       #e53935;
-	winbg:			     #26c6da;
+	background-color:            rgb(40, 44, 52);
+	text-color:                  #BBD2CF;
+	selbg:                       #EF5350;
+	actbg:                       #1C1F24;
+	urgbg:                       #EF5350;
+	winbg:			                 #D9E1EE;
 
 	selected-normal-foreground:  @winbg;
 	normal-foreground:           @text-color;
-	selected-normal-background:  @actbg;
+	selected-normal-background:  @background-color;
 	normal-background:           @background-color;
 
 	selected-urgent-foreground:  @background-color;
@@ -39,7 +39,7 @@ configuration {
 	hide-scrollbar:              "true";
 	margin:                      0px;
 	padding:                     0px;
-	font:            "Roboto medium 10";
+	font:            "Poppins medium 11";
 }
 
 window {
@@ -71,11 +71,11 @@ inputbar {
      children: [ entry ];
 }
 
-textbox-prompt-colon {                                                
-     text-color: inherit;                                              
-     expand: false;                                                    
+textbox-prompt-colon {
+     text-color: inherit;
+     expand: false;
      margin: 0 0.3em 0em 0em;
- }  
+ }
 
 listview {
 	spacing: 0em;
@@ -83,7 +83,7 @@ listview {
 	cycle:   true;
 }
 
-element { 
+element {
 	padding: 16px;
 	border:  0 0 0 5px solid;
 }
@@ -91,10 +91,10 @@ element {
 entry {
 	expand:         true;
 	text-color:     @normal-foreground;
-	background-color: rgb(25, 41, 51);
+	background-color: #232935;
 	vertical-align: 1;
 	padding:        12px;
-	font:            "Roboto medium 13";
+	font:            "Poppins medium 13";
 }
 
 element normal.normal {
