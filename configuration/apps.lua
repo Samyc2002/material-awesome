@@ -20,7 +20,7 @@ return {
     brave = 'brave-browser-nightly',
     editor = 'code', -- gui text editor
     atom = 'atom',
-    emacs = 'emacsclient -c',
+    emacs = 'emacsclient -c -a \'emacs\'',
     social = 'discord',
     game = rofi_command,
     files = 'pcmanfm',
