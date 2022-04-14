@@ -28,20 +28,20 @@ _G.root.keys(require('configuration.keys.global'))
 awful.screen.connect_for_each_screen(
   function(s)
     -- If wallpaper is a function, call it with the screen
-    if beautiful.wallpaper then
-        if type(beautiful.wallpaper) == "string" then
-            if beautiful.wallpaper:sub(1, #"#") == "#" then
-                gears.wallpaper.set(beautiful.wallpaper)
-            elseif beautiful.wallpaper:sub(1, #"/") == "/" then
-                gears.wallpaper.maximized(beautiful.wallpaper, s)
-            end
-        else
-            beautiful.wallpaper(s)
-        end
-    end
-    
+    -- if beautiful.wallpaper then
+    --     if type(beautiful.wallpaper) == "string" then
+    --         if beautiful.wallpaper:sub(1, #"#") == "#" then
+    --             gears.wallpaper.set(beautiful.wallpaper)
+    --         elseif beautiful.wallpaper:sub(1, #"/") == "/" then
+    --             gears.wallpaper.maximized(beautiful.wallpaper, s)
+    --         end
+    --     else
+    --         beautiful.wallpaper(s)
+    --     end
+    -- end
+
     -- Setting the wallpaper with nitrogen
-    -- awful.util.spawn('nitrogen --restore')
+    awful.util.spawn('nitrogen --restore')
   end
 )
 

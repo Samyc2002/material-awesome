@@ -36,6 +36,9 @@ return {
     -- '/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)', -- credential manager
     'xfce4-power-manager', -- Power manager
     'flameshot',
+    -- 'yakuake',
+    '/usr/bin/matray --delay',
+    -- 'kdeconnect-app',
     -- 'synology-drive -minimized',
     'usr/bin/emacs --daemon',
     'mocp',
